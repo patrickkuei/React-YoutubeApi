@@ -1,38 +1,122 @@
-.App {
-  text-align: center;
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ul {
+  list-style-type: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h4 {
+  margin: 0.5em;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.hideContent {
+  overflow: hidden;
+  line-height: 1em;
+  height: 2em;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.flex {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.video {
+  flex: 1;
+  width: 320px;
+  border: orchid solid 5px;
+  border-color: transparent;
+}
+.video:hover {
+  border: orchid solid 5px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.likeBtn {
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  background-color: rgba(0%, 0%, 0%, 0.6);
   color: white;
+  padding: 2px 2px;
+}
+.likeBtn:hover {
+  background-color: rgba(0%, 0%, 0%);
+  color: rgb(255, 255, 88);
+  transition: 0.1s;
+}
+.innerClass {
+  display: inline;
+}
+.itemClass {
+  display: inline;
+  margin: 0 3px;
+}
+.linkClass {
+  text-decoration: none;
+  color: rgb(109, 109, 109);
+  font-size: 24px;
+  padding: 0 10px;
+  text-align: center;
+  border: cadetblue solid 2px;
+}
+.linkClass:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(68, 68, 68);
+  border: rgb(72, 121, 122) solid 2px;
+}
+.activeLinkClass {
+  color: rgb(255, 255, 255);
+  background-color: rgb(68, 68, 68);
+  border: rgb(72, 121, 122) solid 2px;
+}
+.pageBtn {
+  background-color: white;
+  color: rgb(109, 109, 109);
+  font-size: 18px;
+  padding: 0 10px;
+  text-align: center;
+  border: cadetblue solid 2px;
+}
+.pageBtn:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(68, 68, 68);
+  cursor: pointer;
+  border: rgb(72, 121, 122) solid 2px;
 }
 
-.App-link {
-  color: #61dafb;
+button:disabled {
+  background-color: rgb(218, 218, 218);
+  color: aliceblue;
+  border: rgb(173, 222, 223) solid 2px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+button:disabled:hover {
+  background-color: rgb(218, 218, 218);
+  color: aliceblue;
+  border: rgb(173, 222, 223) solid 2px;
+}
+h1,
+.padding {
+  padding: 20px;
+}
+div,
+.center {
+  margin-left: 4px;
+}
+@media screen and (max-width: 655px) {
+  .itemClass {
+    margin: 0;
   }
-  to {
-    transform: rotate(360deg);
+  .linkClass {
+    font-size: 15px;
+    padding: 0 5px;
+  }
+  .pageBtn {
+    font-size: 13px;
+    padding: 0 5px;
+  }
+  nav,
+  h1 {
+    font-size: 20px;
   }
 }
