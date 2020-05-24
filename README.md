@@ -10,5 +10,5 @@ https://patrickkuei.github.io/React-YoutubeApi/
 2.  12 videos per page, max 50 videos per fetch.
 3.  todo: 
     1.  favorite page
-  2.  open video with other web player or link into youtube
-  3.  success rate of fatching youtube api and efficiency
+    2.  open video with other web player or link into youtube
+    3.  success rate of fatching youtube api and efficiency
