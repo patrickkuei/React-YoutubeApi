@@ -4,7 +4,7 @@ function UrlSetting() {
   const parameters = new URLSearchParams({
     part: "snippet,contentDetails",
     chart: "mostPopular",
-    maxResults: "15",
+    maxResults: "50",
     regionCode: "TW",
     key: "AIzaSyCuO1gJqTpIqC8TOSZWAFS-o3tn-I4yuAw",
   });
