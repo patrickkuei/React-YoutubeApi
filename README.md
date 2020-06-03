@@ -4,6 +4,7 @@ https://patrickkuei.github.io/React-YoutubeApi/
 ## Packages: ##
 1.  react-router-dom
 2.  react-js-pagination
+3.  styled-components
 
 ## description ##
 1.  fetch youtube api to show video list.
