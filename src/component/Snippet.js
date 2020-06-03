@@ -1,13 +1,12 @@
-import React from "react";
+import React, { Fragment } from "react";
+import { Description, Title } from "../elements/styled";
 
 const Snippet = ({ item }) => {
   return (
-    <div>
-      <h4>{item.snippet.title}</h4>
-      <div className="hideContent">
-        Description : {item.snippet.description}
-      </div>
-    </div>
+    <Fragment>
+      <Title>{item.snippet.title}</Title>
+      <Description>Description : {item.snippet.description}</Description>
+    </Fragment>
   );
 };
 export default Snippet;

@@ -1,26 +1,22 @@
-import React from "react";
+import React, { Fragment } from "react";
+import { Videos, Video, LikeBtn } from "../elements/styled";
 
 const Favorite = ({ favorites, handleUnlike }) => {
   return (
-    <div>
+    <Fragment>
       {favorites[0] ? (
-        favorites.map((item, index) => (
-          <div className="video" key={index}>
-            {item.video}
-            <div className="unlikeBtnDiv">
-              <button
-                className="unlikeBtn"
-                onClick={() => handleUnlike(item.id)}
-              >
-                Unlike
-              </button>
-            </div>
-          </div>
-        ))
+        <Videos>
+          {favorites.map((item, index) => (
+            <Video key={index}>
+              {item.video}
+              <LikeBtn onClick={() => handleUnlike(item.id)}>Unlike</LikeBtn>
+            </Video>
+          ))}
+        </Videos>
       ) : (
-        <h1>NO FAVORITE VIDEOS</h1>
+        <h3>NO FAVORITE VIDEOS</h3>
       )}
-    </div>
+    </Fragment>
   );
 };
 

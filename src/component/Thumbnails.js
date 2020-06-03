@@ -1,22 +1,16 @@
 import React from "react";
 import TimeConvert from "../component/TimeConvert";
+import { Thumbnail, Time } from "../elements/styled";
 
 const Thumbnails = ({ item }) => {
   return (
-    <div
-      style={{
-        backgroundImage: `url(${item.snippet.thumbnails.medium.url})`,
-        width: "320px",
-        height: "180px",
-        position: "relative",
-      }}
-    >
-      <div className="durationDiv">
+    <Thumbnail item={item}>
+      <Time>
         {new Date(TimeConvert(item.contentDetails.duration))
           .toISOString()
           .substr(14, 5)}
-      </div>
-    </div>
+      </Time>
+    </Thumbnail>
   );
 };
 export default Thumbnails;

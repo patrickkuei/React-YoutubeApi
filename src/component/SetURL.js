@@ -1,4 +1,4 @@
-function UrlSetting() {
+function SetURL() {
   /* 設定api網址 */
   const youtubeApi = new URL("https://www.googleapis.com/youtube/v3/videos");
   const parameters = new URLSearchParams({
@@ -15,4 +15,4 @@ function UrlSetting() {
   return url;
 }
 
-export default UrlSetting;
+export default SetURL;

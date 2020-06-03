@@ -1,9 +1,9 @@
 import { useState } from "react";
-import Fetch from "../component/Fetch";
-import UrlSetting from "../component/UrlSetting";
+import Fetch from "./Fetch";
+import SetURL from "./SetURL";
 
-function ChangePage(handleClick) {
-  const originUrl = UrlSetting();
+function GetVideos(handleClick) {
+  const originUrl = SetURL();
 
   //設定不同頁數的url
   const [url, setUrl] = useState(originUrl);
@@ -22,7 +22,6 @@ function ChangePage(handleClick) {
   };
   const prevPage = () => {
     setUrl(`${originUrl}&pageToken=${prevPageToken}`);
-
     //  console.log(url);
     setIsPageChanged(!isPageChanged);
   };
@@ -30,4 +29,4 @@ function ChangePage(handleClick) {
   return { isLoaded, isPageChanged, nextPage, prevPage, videos };
 }
 
-export default ChangePage;
+export default GetVideos;
